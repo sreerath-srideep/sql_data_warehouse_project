@@ -1,4 +1,4 @@
-**Data Warehouse and Analytics Project**
+**Data Warehouse and Analytics Project🌟**
 
 Welcome to the Data Warehouse and Analytics Project repository!💫
 This project provides a detailed insight about data warehousing and analytics solution from scratch. From building a data warehouse to generating useful insights. It showcases the industry best practices used in data engineering and analytics.
@@ -29,4 +29,4 @@ These insights will enable stakeholders to take best decision...
 
 **🪪License**
 
-This project is licensed under [MIT License]. Therefore you are free to makes changes and share the project.
+This project is licensed under [MIT License](MIT). Therefore you are free to makes changes and share the project.
