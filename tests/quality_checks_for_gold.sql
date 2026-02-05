@@ -1,5 +1,31 @@
+/+
+==========================================================================================
+QUALITY CHECKS
+==========================================================================================
+Script Purpose:
+  This scripts ensures the integrity, consistency and accuracy of the Gold Layer.
+
+Usage Notes:
+  - Run this checks after data loading silver layer.
+  - Investigate and resolve any issues found during checks.
+===========================================================================================
++/  
+
 -----------------------------------------------------------------------------------------
-To check whether the tables connect with each other.
+Subject: To check the uniquness of the customer_key in the gold.dim_customers.
+Expectation: No results.
+-----------------------------------------------------------------------------------------
+
+SELECT
+  customer_key,
+  COUNT(*) AS duplicate_count
+FROM gold.dim_customers
+GROUP BY customer_key
+HAVING COUNT(*) > 1
+
+-----------------------------------------------------------------------------------------
+Subject: To check whether the tables connect with each other.
+Expectation: No results. 
 -----------------------------------------------------------------------------------------
 
 select * 
