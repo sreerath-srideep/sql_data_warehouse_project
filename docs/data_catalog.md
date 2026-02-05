@@ -10,7 +10,7 @@ dimension tables and fact tables for specific business needs.
 **1.gold.dim_customers**
 
 *-Purpose: Stores customers details.*
-*-Columns:*
+
 
 | Column Name  | Data Type |     Description    |
 | ------------ | --------- | ------------------ |
@@ -28,7 +28,7 @@ dimension tables and fact tables for specific business needs.
 **2.gold.dim_products**
 
 *-Purpose: Provides information about the products.*
-*-Columns:*
+
 
 | Column Name  | Data Type |     Description    |
 | ------------ | --------- | ------------------ |
@@ -47,7 +47,7 @@ dimension tables and fact tables for specific business needs.
 **3.gold.fact_sales**
 
 *-Purpose: Stores transactional data for analytical purpose.*
-*-Columns:*
+
 
 | Column Name  | Data Type |     Description    |
 | ------------ | --------- | ------------------ |
