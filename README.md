@@ -27,6 +27,13 @@ Develop a SQL based analytics to deliver detailed insights into:
 
 These insights will enable stakeholders to take best decision...
 
+**Data Warehouse Design Architecture**
+
+Here, we choose suitable management approach for the data warehouse. It is like designing a blue-print to 
+build the architecture for the data warehouse.
+
+[Data Flow Diagram.drawio](https://github.com/user-attachments/files/25119101/Data.Flow.Diagram.drawio)
+
 **🪪License**
 
 This project is licensed under [MIT License](MIT). Therefore you are free to makes changes and share the project.
