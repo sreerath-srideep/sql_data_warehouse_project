@@ -32,7 +32,7 @@ These insights will enable stakeholders to take best decision...
 Here, we choose suitable management approach for the data warehouse. It is like designing a blue-print to 
 build the architecture for the data warehouse.
 
-[Data Flow Diagram.drawio](https://github.com/user-attachments/files/25119101/Data.Flow.Diagram.drawio)
+<img width="4564" height="2244" alt="image" src="https://github.com/user-attachments/assets/b8cbd7f1-894c-42c1-af26-d476f63bb5a2" />
 
 **🪪License**
 
