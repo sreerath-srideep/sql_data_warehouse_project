@@ -6,11 +6,11 @@ This project provides a detailed insight about data warehousing and analytics so
 **👉Important Links & Tools.**
 
 - Datasets: Access to the project dataset  (csv files).
-- SQL Server Express: Lightweight server for hosting your database.
-- SQL Server Management Studio (SSMS): GUI for managing and interacting with datasets.
-- Git Repository: Set up Github account and repository to manage, version and collaborate on your code efficiently.
-- Draw.io: Design data architecture, models and diagrams.
-- Notion: All-in-one tool for project management and organization.  
+- [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-downloads): Lightweight server for hosting your database.
+- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/ssms/install/install?redirectedfrom=MSDN): GUI for managing and interacting with datasets.
+- [Git Repository](https://github.com/): Set up Github account and repository to manage, version and collaborate on your code efficiently.
+- [Draw.io](https://app.diagrams.net/): Design data architecture, models and diagrams.
+- [Notion](https://www.notion.so/): All-in-one tool for project management and organization.  
 
 **⭐Project Requirements**
 
