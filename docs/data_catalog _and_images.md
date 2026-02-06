@@ -60,3 +60,13 @@ dimension tables and fact tables for specific business needs.
 | sales_amount | INT | The total monetary value of the sale for the line item. |
 | quantity | INT | The number of units of the product ordered for the line item. |
 | price | INT | The price per unit of the product for the line item. |
+
+===========================================================================================================================
+**Data Integration Model**
+===========================================================================================================================
+
+This image shows how different tables from the ERP system and CRM databases.
+
+<img width="1969" height="1280" alt="Integration Model (Silver Layer) drawio" src="https://github.com/user-attachments/assets/58e6ef8e-262f-4e66-bc6d-9ce5e0cc662b" />
+
+===========================================================================================================================
