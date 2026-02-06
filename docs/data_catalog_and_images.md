@@ -61,11 +61,11 @@ dimension tables and fact tables for specific business needs.
 | quantity | INT | The number of units of the product ordered for the line item. |
 | price | INT | The price per unit of the product for the line item. |
 
-===========================================================================================================================
+===============================================================================================
 
 **Data Integration Model**
 
-===========================================================================================================================
+===============================================================================================
 
 This image shows how different tables from the ERP system and CRM databases.
 
