@@ -3,6 +3,15 @@
 Welcome to the Data Warehouse and Analytics Project repository!💫
 This project provides a detailed insight about data warehousing and analytics solution from scratch. From building a data warehouse to generating useful insights. It showcases the industry best practices used in data engineering and analytics.
 
+**👉Important Links & Tools.**
+
+- Datasets: Access to the project dataset  (csv files).
+- SQL Server Express: Lightweight server for hosting your database.
+- SQL Server Management Studio (SSMS): GUI for managing and interacting with datasets.
+- Git Repository: Set up Github account and repository to manage, version and collaborate on your code efficiently.
+- Draw.io: Design data architecture, models and diagrams.
+- Notion: All-in-one tool for project management and organization.  
+
 **⭐Project Requirements**
 
 **Building a Data Warehouse**
@@ -27,13 +36,66 @@ Develop a SQL based analytics to deliver detailed insights into:
 
 These insights will enable stakeholders to take best decision...
 
-**Data Warehouse Design Architecture**
+**🏗️ Data Warehouse Design Architecture**
 
-Here, we choose suitable management approach for the data warehouse. It is like designing a blue-print to 
-build the architecture for the data warehouse.
+This diagram provides an overview of the end-to-end data pipeline — from source systems to final consumers — structured into layered stages for clarity and scalability
 
 <img width="2345" height="1203" alt="Medallion Approach Diagram drawio" src="https://github.com/user-attachments/assets/56accbd2-48be-41cf-bb6a-7bc54ddd890e" />
 
+📂 Sources
+- CRM
+
+- ERP
+
+- CSV Files (stored in folders)
+
+🥉 Bronze Layer (Raw Data)
+
+- Object Type: Tables
+
+- Load: Batch Processing, Full Load, Truncate & Insert
+
+- Transformations: None (as-is ingestion)
+
+- Data Model: None
+
+🥈 Silver Layer (Cleaned & Standardized Data)
+
+- Object Type: Tables
+
+- Load: Batch Processing, Full Load, Truncate & Insert
+
+- Transformations: Data Cleaning, Standardization, Normalization, Derived Columns, Enrichment
+
+- Data Model: None
+
+🥇 Gold Layer (Business-Ready Data)
+
+- Object Type: Tables
+
+- Load: No additional load (curated layer)
+
+- Transformations: Data Integration, Aggregation, Business Logic
+
+- Data Model: Star Schema, Flat Tables, Aggregated Tables
+
+👥 Consumers
+
+- BI & Reporting
+
+- Ad-Hoc SQL Queries
+
+- Machine Learning
+
+🎯 Purpose
+
+- This architecture ensures:
+
+- Traceability in Bronze (raw data)
+
+- Consistency in Silver (cleaned data)
+
+- Business value in Gold (analytics-ready data)
 
 **🪪License**
 
