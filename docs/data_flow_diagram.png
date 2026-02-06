@@ -1,5 +1,29 @@
-======================================================================================
-This image gives a clear understanding about how data flows from one layer to another.
-======================================================================================
+📊 Data Mart (Star Schema)
+This project demonstrates a sales-focused Data Mart using a Star Schema design.
+The schema is built to enable efficient analytical queries and reporting.
+
+🔹 Schema Overview
+Fact Table: gold_fact_sales  
+Contains transactional data such as order details, quantity, price, and calculated sales amount.
+
+Foreign keys link to customer and product dimensions.
+
+Sales calculation: Sales = Quantity × Price.
+
+Dimension Table: gold_dim_customers  
+Stores customer attributes including name, country, demographics, and identifiers.
+
+Dimension Table: gold_dim_products  
+Holds product details such as category, sub-category, cost, and product line.
+
+🎯 Purpose
+This schema supports analysis of:
+
+Customer behavior
+
+Product performance
+
+Sales trends
+
 
 
