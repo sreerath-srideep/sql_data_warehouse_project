@@ -32,7 +32,7 @@ These insights will enable stakeholders to take best decision...
 Here, we choose suitable management approach for the data warehouse. It is like designing a blue-print to 
 build the architecture for the data warehouse.
 
-<img width="1121" height="541" alt="Medallion Approach Diagram drawio" src="https://github.com/user-attachments/assets/6d5e612f-1dd8-4fd8-9e72-1c173c94485c" />
+<img width="2345" height="1203" alt="Medallion Approach Diagram drawio" src="https://github.com/user-attachments/assets/56accbd2-48be-41cf-bb6a-7bc54ddd890e" />
 
 
 **🪪License**
