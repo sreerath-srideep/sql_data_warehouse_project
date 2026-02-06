@@ -63,12 +63,131 @@ dimension tables and fact tables for specific business needs.
 
 ============================================================================================
 
-**Data Integration Model**
+**Data Flow Diagram (ETL Pipeline)**
 
 ============================================================================================
 
-This image shows how different tables from the ERP system and CRM databases.
+This diagram represents the data pipeline architecture from source systems to the final curated Data Warehouse tables.
+It highlights the Bronze → Silver → Gold layered approach commonly used in modern data engineering
+
+<img width="1604" height="1144" alt="Data Flow Diagram drawio" src="https://github.com/user-attachments/assets/a49350aa-b54a-48a5-a82f-ffc7c0eaa773" />
+
+📂 Sources
+
+- CRM (Sales, Product, Customer data)
+- ERP (Customer location, Customer info, Product categories)
+
+🥉 Bronze Layer (Raw Data)
+
+- crm_sales_details
+- crm_prd_info
+- crm_cust_info
+
+- erp_cust_az12
+- erp_loc_a101
+- erp_px_cat_g1v2
+
+🥈 Silver Layer (Cleaned & Transformed Data)
+
+- crm_sales_details (multiple transformations/joins)
+- erp_cust_az12
+- erp_loc_a101
+
+🥇 Gold Layer (Curated Data for Analytics)
+
+- fact_sales
+- dim_customers
+- dim_products
+
+🎯 Purpose
+
+This layered design ensures:
+
+- Bronze → Raw ingestion for traceability
+- Silver → Standardized, cleaned data for consistency
+- Gold → Business-ready tables for BI dashboards and reporting
+
+============================================================================================
+
+**Data Integration Model (CRM - ERP)**
+
+============================================================================================
+
+This diagram illustrates how CRM and ERP systems are connected through shared keys, enabling smooth data flow across platforms.
 
 <img width="1969" height="1280" alt="Integration Model (Silver Layer) drawio" src="https://github.com/user-attachments/assets/58e6ef8e-262f-4e66-bc6d-9ce5e0cc662b" />
 
+📂 CRM Tables
+*- SALES*
 
+sales_info, sls_prd_key, sls_cust_id
+
+*- PRODUCT*
+
+prd_info, prd_id
+
+*- CUSTOMER*
+
+cust_info, cst_id, cst_key
+
+📂 ERP Tables
+
+*- PRODUCT*
+
+px_cat_g1v2, id
+
+*- CUSTOMER (Location)*
+
+loc_a101, cid
+
+*- CUSTOMER (Information)*
+
+cust_az12, cid
+
+🔑 Integration Points
+
+- CRM prd_id → ERP id
+
+- CRM cst_id → ERP cid
+
+🎯 Purpose
+
+This integration model shows how sales, product, and customer data from CRM can be aligned with ERP records to support:
+
+- Unified reporting
+- Consistent customer information
+- Streamlined product management
+
+============================================================================================
+
+**Data Mart**
+
+============================================================================================
+
+This diagram demonstrates a sales-focused Data Mart using a Star Schema design.
+The schema is built to enable efficient analytical queries and reporting.
+
+<img width="1626" height="1106" alt="Data Mart drawio" src="https://github.com/user-attachments/assets/ad9744ce-16a7-4363-b9c8-bd771e193ec2" />
+
+
+**⚡ Schema Overview**
+*Fact Table:* gold_fact_sales  
+Contains transactional data such as order details, quantity, price, and calculated sales amount.
+
+- Foreign keys link to customer and product dimensions.
+
+- Sales calculation: Sales = Quantity × Price.
+
+*Dimension Table:* gold_dim_customers  
+Stores customer attributes including name, country, demographics, and identifiers.
+
+*Dimension Table:* gold_dim_products  
+Holds product details such as category, sub-category, cost, and product line.
+
+**🎯 Purpose**
+
+This schema supports analysis of:
+
+-Customer behavior
+-Product performance
+-Sales trends
