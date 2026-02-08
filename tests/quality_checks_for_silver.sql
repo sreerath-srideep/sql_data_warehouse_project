@@ -1,3 +1,17 @@
+/+
+==========================================================================================
+QUALITY CHECKS
+==========================================================================================
+Script Purpose:
+  This scripts ensures the integrity, consistency and accuracy of the Silver Layer.
+
+Usage Notes:
+  - Run this checks after data loading in bronze layer.
+  - Investigate and resolve any issues found during checks.
+===========================================================================================
++/  
+
+
 ===crm_cust_info Table===
 
 -- To check duplicates or nulls in Primary Key
