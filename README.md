@@ -5,7 +5,7 @@ This project provides a detailed insight about data warehousing and analytics so
 
 **👉Important Links & Tools.**
 
-- [Datasets](https://github.com/sreerath-srideep/sql_data_warehouse_project/blob/main/files/datasets): Access to the project dataset  (csv files).
+- [Datasets](https://github.com/sreerath-srideep/sql_data_warehouse_project/blob/main/datasets): Access to the project dataset  (csv files).
 - [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-downloads): Lightweight server for hosting your database.
 - [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/ssms/install/install?redirectedfrom=MSDN): GUI for managing and interacting with datasets.
 - [Git Repository](https://github.com/): Set up Github account and repository to manage, version and collaborate on your code efficiently.
